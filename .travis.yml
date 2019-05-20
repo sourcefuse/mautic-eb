@@ -34,7 +34,7 @@ install:
   # build-dev.sh - Custom distribution (for branches containing the word "dev")
   #                Includes a specific (recent) sha, core patches, custom theme, and additional plugins.
   #                This build is Used for advanced testing and deployment by DMS.
-  - if [[ "$TRAVIS_BRANCH" = *"dev"* ]]; then ./scripts/build-dev.sh; else bash ./scripts/build.sh; fi
+  - if [[ "$TRAVIS_BRANCH" = *"production"* ]]; then ./scripts/build-dev.sh; else bash ./scripts/build.sh; fi
 
 script:
   # Run PHPUnit on the complete build.
