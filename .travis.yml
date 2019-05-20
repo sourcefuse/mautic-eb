@@ -25,7 +25,7 @@ before_install:
   - export SYMFONY_ENV="test"
 
 install:
-  # There are 2 build variants to be built based on the branch name:
+  # Ther are 2 build variants to be built based on the branch name:
   #
   # build.sh     - Standard Mautic (default)
   #                Includes latest release and standard dependencies.
