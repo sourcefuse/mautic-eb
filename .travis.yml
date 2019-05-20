@@ -76,7 +76,7 @@ deploy:
   bucket_path: $AWS_S3_BUCKET_PATH
   skip_cleanup: true
   on:
-    branch: dev
+    branch: production
 
 # http://docs.travis-ci.com/user/notifications/
 notifications:
