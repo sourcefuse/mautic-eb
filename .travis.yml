@@ -39,7 +39,7 @@ install:
 script:
   # Run PHPUnit on the complete build.
   - cd mautic
-  - bin/phpunit -d memory_limit=2048M --bootstrap vendor/autoload.php --configuration app/phpunit.xml.dist --stop-on-failure
+ # - bin/phpunit -d memory_limit=2048M --bootstrap vendor/autoload.php --configuration app/phpunit.xml.dist --stop-on-failure
   - cd -
 
 before_deploy:
@@ -76,7 +76,7 @@ deploy:
  # bucket_path: $AWS_S3_BUCKET_PATH
   skip_cleanup: true
   on:
-    branch: dev
+    branch: master
 
 # http://docs.travis-ci.com/user/notifications/
 notifications:
